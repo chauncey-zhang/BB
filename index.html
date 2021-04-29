@@ -1,47 +1,64 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="Content-Type" content="text/html;">
-		<meta http-equiv="Content-Script-Type" content="text/javascript">
-		<meta http-equiv="Content-Style-Type" content="text/css">
-		<meta charset="utf-8">
-		<meta name="viewport" id="viewport" content="width = device-width, initial-scale = 1, minimum-scale = 1, maximum-scale = 1">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta http-equiv="Pragma" content="no-cache">
-		<meta http-equiv="Cache-Control" content="no-cache">
-		<meta equiv="Expires" content="0">
-		<script src="../js/jquery-1.11.2.min.js"></script>
-       <title>我要飞的更高</title>
 
-<style type="text/css">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="baidu_union_verify" content="25ad4ee119263767decf3dfcedf7d3ce">
+	<meta charset="utf-8">
+	<meta name="viewport" id="viewport"
+		content="width = device-width, initial-scale = 1, minimum-scale = 1, maximum-scale = 1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta equiv="Expires" content="0">
+	<link type="text/css" rel="stylesheet" href="sidebar.css">
+	<script src="jquery-1.11.2.min.js"></script>
+	<title>蹦一蹦</title>
 
-body {
-	-webkit-user-select: none;
-	margin:0px;
-	background:transparent;
-}
-#play68box {
-	top: 25%;
-}
+	<style type="text/css">
+		body {
+			-webkit-user-select: none;
+			margin: 0px;
+			background: transparent;
+		}
 
-</style>
-<script>
-document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
-	WeixinJSBridge.call('showOptionMenu');
-});
-//new Image().src = 'http://www.wenzhangku.com/weixin/feidegenggao/';
-</script>
-<script type="text/javascript" src="play168.js"></script>
-<script type="text/javascript" src="gm17.min.js"></script>
-    </head>
-    <body onorientationchange="rtalt()" style="-webkit-transform-origin: 0px 0px 0px;">
-    <div id="chf2" style="position:relative;width:320px;margin:0 auto;"><canvas id="gcvs" width="320" height="416"></canvas></div>	
- 
-<link type="text/css" rel="stylesheet" href="sidebar.css">
+		#play68box {
+			top: 25%;
+		}
+	</style>
+	<script>
+		document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+			WeixinJSBridge.call('showOptionMenu');
+		});
+	</script>
+	<script type="text/javascript" src="play168.js"></script>
+	<script type="text/javascript" src="gm17.min.js"></script>
+</head>
 
-<script type="text/javascript" src="play68bar.js"></script>
-<div style="display:none">
-<script type="text/javascript">
-</div>
-	
-</body></html>
+<body onorientationchange="rtalt()" style="-webkit-transform-origin: 0px 0px 0px;">
+	<div id="chf2" style="position:relative;width:320px;margin:0 auto;">
+		<canvas id="gcvs" width="320" height="416"></canvas>
+	</div>
+
+	<div style="display:none">
+
+	</div>
+	<script type="text/javascript">
+		var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		document.getElementById('chf2').style.width = screenWidth + 'px'
+		document.getElementById('chf2').style.height = screenHeight + 'px'
+
+		document.getElementById('gcvs').width = screenWidth
+		document.getElementById('gcvs').height = screenHeight
+
+		document.getElementById('gcvs').style.width = screenWidth + 'px'
+		document.getElementById('gcvs').style.height = screenHeight + 'px'
+	</script>
+	<script type="text/javascript" src="play68bar.js"></script>
+</body>
+
+</html>
